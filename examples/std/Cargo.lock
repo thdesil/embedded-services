@@ -157,14 +157,6 @@ dependencies = [
 [[package]]
 name = "bit-register"
 version = "0.1.0"
-source = "git+https://github.com/OpenDevicePartnership/odp-utilities?rev=2f79d238#2f79d238149049d458199a9a9129b54be7893aee"
-dependencies = [
- "num-traits",
-]
-
-[[package]]
-name = "bit-register"
-version = "0.1.0"
 source = "git+https://github.com/OpenDevicePartnership/odp-utilities#583015c08ad9855f310bdb25d5cf9abff77b5e08"
 dependencies = [
  "num-traits",
@@ -204,9 +196,9 @@ dependencies = [
 
 [[package]]
 name = "bitfield-struct"
-version = "0.10.1"
+version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2be5a46ba01b60005ae2c51a36a29cfe134bcacae2dd5cedcd4615fbaad1494b"
+checksum = "8769c4854c5ada2852ddf6fd09d15cf43d4c2aaeccb4de6432f5402f08a6003b"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -579,9 +571,9 @@ dependencies = [
 
 [[package]]
 name = "embedded-batteries"
-version = "0.2.1"
+version = "0.3.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "31e14d288a59ef41f4e05468eae9b1c9fef6866977cea86d3f1a1ced295b6cab"
+checksum = "40f975432b4e146342a1589c563cffab6b7a692024cb511bf87b6bfe78c84125"
 dependencies = [
  "bitfield-struct",
  "bitflags 2.9.4",
@@ -591,9 +583,9 @@ dependencies = [
 
 [[package]]
 name = "embedded-batteries-async"
-version = "0.2.1"
+version = "0.3.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "98cb543f4eea7e2c57544f345a5cf40fd90e9d3593b96cb7515f6c1d62c7fc68"
+checksum = "a3bf0e4be67770cfc31f1cea8b73baf98c0baf2c57d6bd8c3a4c315acb1d8bd4"
 dependencies = [
  "bitfield-struct",
  "embedded-batteries",
@@ -603,7 +595,7 @@ dependencies = [
 [[package]]
 name = "embedded-cfu-protocol"
 version = "0.2.0"
-source = "git+https://github.com/OpenDevicePartnership/embedded-cfu#a4cc8707842b878048447abbf2af4efa79fed368"
+source = "git+https://github.com/OpenDevicePartnership/embedded-cfu#e0d776017cf34c902c9f2a2be0c75fe73a3a4dda"
 dependencies = [
  "embedded-io-async",
  "log",
@@ -779,9 +771,9 @@ dependencies = [
 [[package]]
 name = "espi-device"
 version = "0.1.0"
-source = "git+https://github.com/OpenDevicePartnership/haf-ec-service#8cdd61095471903b1b438dbb0eee142676cc3d74"
+source = "git+https://github.com/OpenDevicePartnership/haf-ec-service#9805f13c044b0e314d415410c57a8a59a40eabeb"
 dependencies = [
- "bit-register 0.1.0 (git+https://github.com/OpenDevicePartnership/odp-utilities?rev=2f79d238)",
+ "bit-register",
  "bitflags 2.9.4",
  "num-traits",
  "num_enum",
@@ -1016,9 +1008,9 @@ dependencies = [
 [[package]]
 name = "mctp-rs"
 version = "0.1.0"
-source = "git+https://github.com/dymk/mctp-rs#4456c65131366acd5e605c7d88a707881fa9e9f0"
+source = "git+https://github.com/dymk/mctp-rs#f3121512468e4776c4b1d2d648b54c7271b97bd9"
 dependencies = [
- "bit-register 0.1.0 (git+https://github.com/OpenDevicePartnership/odp-utilities)",
+ "bit-register",
  "espi-device",
  "num_enum",
  "smbus-pec",
